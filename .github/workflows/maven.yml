@@ -28,6 +28,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package -f demo/src/pom.xml
+      run: mvn -B package -f demo/pom.xml
     - name: Run Tests 
       run: cd demo && mvn clean && mvn test
